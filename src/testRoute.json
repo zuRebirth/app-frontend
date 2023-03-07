@@ -1,0 +1,261 @@
+[
+  {
+    "path": "/system",
+    "component": "Layout",
+    "redirect": "/system/user",
+    "meta": {
+      "title": "系统管理",
+      "icon": "system",
+      "hidden": false,
+      "alwaysShow": true,
+      "roles": ["ADMIN"],
+      "keepAlive": true
+    },
+    "children": [
+      {
+        "path": "user",
+        "component": "system/user/index",
+        "name": "user",
+        "meta": {
+          "title": "用户管理",
+          "icon": "system",
+          "hidden": false,
+          "alwaysShow": false,
+          "roles": ["ADMIN"],
+          "keepAlive": true
+        }
+      },
+      {
+        "path": "role",
+        "component": "system/role/index",
+        "name": "role",
+        "meta": {
+          "title": "角色管理",
+          "icon": "role",
+          "hidden": false,
+          "alwaysShow": false,
+          "roles": ["ADMIN"],
+          "keepAlive": true
+        }
+      },
+      {
+        "path": "cmenu",
+        "component": "system/menu/index",
+        "name": "cmenu",
+        "meta": {
+          "title": "菜单管理",
+          "icon": "menu",
+          "hidden": false,
+          "alwaysShow": false,
+          "roles": ["ADMIN"],
+          "keepAlive": true
+        }
+      },
+      {
+        "path": "dict",
+        "component": "system/dict/index",
+        "name": "dict",
+        "meta": {
+          "title": "字典管理",
+          "icon": "dict",
+          "hidden": false,
+          "alwaysShow": false,
+          "roles": ["ADMIN"],
+          "keepAlive": true
+        }
+      }
+    ]
+  },
+  {
+    "path": "/basic",
+    "component": "Layout",
+    "redirect": "/basic/detection",
+    "name": "/basic",
+    "meta": {
+      "title": "基础设置",
+      "icon": "system",
+      "hidden": false,
+      "alwaysShow": true,
+      "roles": ["ADMIN"],
+      "keepAlive": true
+    },
+    "children": [
+      {
+        "path": "detection",
+        "component": "basic/detection/index",
+        "name": "detection",
+        "meta": {
+          "title": "检测项目设置",
+          "icon": "system",
+          "hidden": false,
+          "alwaysShow": false,
+          "roles": ["ADMIN"],
+          "keepAlive": true
+        }
+      },
+      {
+        "path": "price",
+        "component": "basic/price/index",
+        "name": "price",
+        "meta": {
+          "title": "预约单价设置",
+          "icon": "system",
+          "hidden": false,
+          "alwaysShow": false,
+          "roles": ["ADMIN"],
+          "keepAlive": true
+        }
+      }
+    ]
+  },
+  {
+    "path": "/sampling",
+    "component": "Layout",
+    "redirect": "/sampling/list",
+    "name": "sampling",
+    "meta": {
+      "title": "日常抽检管理",
+      "icon": "system",
+      "hidden": false,
+      "alwaysShow": true,
+      "roles": ["ADMIN"],
+      "keepAlive": true
+    },
+    "children": [
+      {
+        "path": "sampleList",
+        "component": "sampling/sampleList/index",
+        "name": "sampleList",
+        "meta": {
+          "title": "样品列表",
+          "icon": "system",
+          "hidden": false,
+          "alwaysShow": false,
+          "roles": ["ADMIN"],
+          "keepAlive": true
+        }
+      }
+    ]
+  },
+  {
+    "path": "/appt",
+    "component": "Layout",
+    "redirect": "/appt/list",
+    "name": "/appt",
+    "meta": {
+      "title": "预约送检管理",
+      "icon": "system",
+      "hidden": false,
+      "alwaysShow": true,
+      "roles": ["ADMIN"],
+      "keepAlive": true
+    },
+    "children": [
+      {
+        "path": "list",
+        "component": "appt/list/index",
+        "name": "list",
+        "meta": {
+          "title": "预约送检列表",
+          "icon": "system",
+          "hidden": false,
+          "alwaysShow": false,
+          "roles": ["ADMIN"],
+          "keepAlive": true
+        }
+      },
+      {
+        "path": "detail",
+        "component": "appt/detail/index",
+        "name": "detail",
+        "meta": {
+          "title": "预约送检支付明细",
+          "icon": "system",
+          "hidden": false,
+          "alwaysShow": false,
+          "roles": ["ADMIN"],
+          "keepAlive": true
+        }
+      },
+      {
+        "path": "money",
+        "component": "appt/money/index",
+        "name": "money",
+        "meta": {
+          "title": "预约资金报表",
+          "icon": "system",
+          "hidden": false,
+          "alwaysShow": false,
+          "roles": ["ADMIN"],
+          "keepAlive": true
+        }
+      }
+    ]
+  },
+  {
+    "path": "/check",
+    "component": "Layout",
+    "meta": {
+      "title": "检测管理",
+      "icon": "system",
+      "hidden": false,
+      "alwaysShow": true,
+      "roles": ["ADMIN"],
+      "keepAlive": true
+    },
+    "children": [
+      {
+        "path": "task",
+        "component": "check/task/index",
+        "name": "task",
+        "meta": {
+          "title": "检测任务",
+          "icon": "system",
+          "hidden": false,
+          "alwaysShow": false,
+          "roles": ["ADMIN"],
+          "keepAlive": true
+        }
+      },
+      {
+        "path": "recheck",
+        "component": "check/recheck/index",
+        "name": "recheck",
+        "meta": {
+          "title": "复检列表",
+          "icon": "system",
+          "hidden": false,
+          "alwaysShow": false,
+          "roles": ["ADMIN"],
+          "keepAlive": true
+        }
+      },
+      {
+        "path": "result",
+        "component": "check/result/index",
+        "name": "result",
+        "meta": {
+          "title": "检测结果",
+          "icon": "system",
+          "hidden": false,
+          "alwaysShow": false,
+          "roles": ["ADMIN"],
+          "keepAlive": true
+        }
+      },
+      {
+        "path": "analysis",
+        "component": "check/analysis/index",
+        "name": "analysis",
+        "meta": {
+          "title": "检测分析",
+          "icon": "system",
+          "hidden": false,
+          "alwaysShow": false,
+          "roles": ["ADMIN"],
+          "keepAlive": true
+        }
+      }
+    ]
+  }
+]
